@@ -1,4 +1,4 @@
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import type { User } from "../shared/user.types";
 import { useNavigate } from "react-router-dom";
 

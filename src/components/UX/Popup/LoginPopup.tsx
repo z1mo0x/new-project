@@ -1,5 +1,5 @@
 
-import { useEffect, useState, type FormEvent } from 'react';
+import { useState } from 'react';
 import styles from './LoginPopup.module.scss';
 import Button from '../Buttons/Button/Button';
 import type { User, UserLogin } from '../../../shared/user.types';

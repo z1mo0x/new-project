@@ -3,7 +3,6 @@ import styles from './HeaderActions.module.scss'
 import LoginPopup from '../../../UX/Popup/LoginPopup'
 import { usePopup } from '../../../../hooks/usePopup'
 import useAuth from '../../../../hooks/useAuth'
-import { NavLink } from 'react-router-dom'
 import useLogout from '../../../../hooks/useLogout'
 
 
