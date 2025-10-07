@@ -1,0 +1,115 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color: white, $alpha: 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    transition: all .3s;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    animation: popupClose .3s;
+}
+
+.popup.active {
+    display: block;
+    opacity: 1;
+    animation: popupOpen .3s;
+}
+
+@keyframes popupOpen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popupClose {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.popup__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.9);
+    width: 400px;
+    padding: 30px;
+    border: 1px solid vars.$main;
+    border-radius: 5px;
+    background: white;
+    transition: all .3s;
+}
+
+.popup.active .popup__wrapper {
+    transform: translate(-50%, -50%);
+}
+
+.popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.popup__head {
+    @include vars.text-main;
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.popup__form {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.popup__error {
+    color: vars.$dark-main;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.input__error {
+    @include vars.text-main;
+
+    margin-top: 10px;
+    color: vars.$dark-main;
+    font-size: 14px;
+}
+
+.popup__input input {
+    @include vars.input;
+    @include vars.text-main;
+
+    width: 100%;
+}
+
+.popup__input .error {
+    border-color: vars.$main;
+}
+
+@media (max-width:768px) {
+    .popup__wrapper {
+        width: 80%;
+    }
+}

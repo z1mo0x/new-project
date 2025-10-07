@@ -1,0 +1,17 @@
+$text: rgba(37, 43, 66, 1);
+$text-light: rgba(115, 115, 115, 1);
+$main: rgba(255, 104, 91, 1);
+$dark-main: rgba(231, 64, 64, 1);
+$input: lightgrey;
+
+@mixin text-main {
+    font-family: "Montserrat";
+    color: $text;
+}
+
+@mixin input {
+    border: 1px solid $input;
+    border-radius: 5px;
+    padding: 10px 15px;
+    outline: none;
+}

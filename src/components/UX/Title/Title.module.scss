@@ -1,0 +1,8 @@
+.title {
+    @include vars.text-main;
+    font-size: clamp(28px, 20.72px + 1.94vw, 58px);
+    font-weight: 700;
+    line-height: clamp(39px, 15.38px + 3.37vw, 80px);
+    letter-spacing: 0.2px;
+    text-align: left;
+}
