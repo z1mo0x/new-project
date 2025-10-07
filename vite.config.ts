@@ -11,5 +11,4 @@ export default defineConfig({
       }
     }
   },
-  assetsInclude: ['**/*.json'] // ← на верхнем уровне!
 })
