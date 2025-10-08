@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react"
+import { useCallback } from "react"
 import { config } from "../../../../config/siteConfig"
 import NavItem from "./NavItem/NavItem"
 import styles from './HeaderNav.module.scss'
