@@ -7,9 +7,8 @@ import styles from './Profile.module.scss'
 import { useEffect } from 'react'
 import useLogout from '../../hooks/useLogout'
 
-type Props = {}
 
-export default function Profile({ }: Props) {
+export default function Profile() {
 
     const userData = localStorage.getItem("user")
     const user: User = userData ? JSON.parse(userData) : null;
