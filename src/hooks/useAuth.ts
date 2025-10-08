@@ -4,7 +4,6 @@ export function getAuthToken() {
     return cookie ? cookie : null;
 }
 
-// Кастомный хук для проверки авторизации в куках
 export default function useAuth() {
     const token = getAuthToken();
 
