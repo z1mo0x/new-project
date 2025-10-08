@@ -31,7 +31,7 @@ const getNavItems = useCallback((items: NavLink[]) => {
     else {
         return unsecured.map((item) => { return <NavItem key={item.title} link={item.link}>{item.title}</NavItem> })
     }
-}, [])
+}, [logout])
 
 Проект выполнен в стеке:
 1. React + Vite
